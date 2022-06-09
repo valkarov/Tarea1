@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 7, 2022, 9:07:10 PM
+    Author     : Aurelio
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+
+
+.container{
+    height: 120vh;
+    width: 100%;
+    background-image: url(../images/PuertoViejo.jpg);
+    backround-position:center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar{
+    height: 15vh;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    font-weight: bold;
+        -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+
+/*para cambiar posicion de enlaces*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:0px 20px;
+}
+
+/*para eliminar el subrayado de los hipervinculos*/
+nav ul li a{
+    text-decoration: none;
+    color:darkchid;  
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top:24px;
+    margin-bottom: 15px;
+    color:greenyellow;     
+}
+
+.content p{
+    font-size: 20px;
+    color:greenyellow;
+}
+
+
+/*mover la imagen*/
+.feature-img{
+    height: 20%;
+    position: fixed;
+    bottom: 120px;
+    right: 160px;
+}

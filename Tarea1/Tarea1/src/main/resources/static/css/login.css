@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 26, 2022, 6:28:50 PM
+    Author     : Aurelio
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+body{
+    background: linear-gradient(120deg, #65098C, #E6B8FA);
+    overflow: hidden;
+    height: 100vh;
+    
+}
+
+.center{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    width: 400px;
+    background: white;
+    transform: translate(-50%,-50%); 
+    border-radius: 10px; /*sombreado*/
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+.center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+/*lineas y borde de la caja donde estara la info*/
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0; /*lineas abajo*/
+}
+
+/*modificar el input*/
+ .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(-5%);
+    font-size: 16px;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #65098C;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #E6B8FA
+}
+
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    background: green;
+    transition: .5s;   
+}
+
+.sigup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.sigup a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.sigup a:hover{
+    text-decoration: underline;
+}
+
+.txt_field span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.txt_field input:focus~label,
+.txt_field input:valid~label{
+    top:-20px;
+    color: #2691d9;
+    
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before{
+ width: 100%;
+    
+}
