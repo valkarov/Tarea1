@@ -8,20 +8,30 @@ and open the template in the editor.
     Author     : Aurelio
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+font-family: 'Roboto', sans-serif;
+
 
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif; 
 }
 
 body{
-    background: linear-gradient(120deg, #65098C, #E6B8FA);
+    background: url(../images/Cahuita.jpg);
     overflow: hidden;
     height: 100vh;
     
+}
+
+.title{
+    color: white;
+    font-family: Roboto;
+}
+
+.label{
+    color: red;
 }
 
 .center{
@@ -29,7 +39,7 @@ body{
     top:50%;
     left: 50%;
     width: 400px;
-    background: white;
+    background: transparent;
     transform: translate(-50%,-50%); 
     border-radius: 10px; /*sombreado*/
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
@@ -43,8 +53,8 @@ body{
 /*lineas y borde de la caja donde estara la info*/
 form .txt_field{
     position: relative;
-    border-bottom: 2px solid silver;
     margin: 30px 0; /*lineas abajo*/
+    text-align: center;
 }
 
 /*modificar el input*/
@@ -53,40 +63,45 @@ form .txt_field{
     padding: 0 5px;
     height: 40px;
     font-size: 20px;
-    border: none;
     background: none;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
 }
 
-
 .txt_field label{
-    position: absolute;
     top: 50%;
     left: 5px;
-    color: #adadad;
-    transform: translate(-5%);
+    color: white;
     font-size: 16px;
+    font-family: Roboto;
+    font-size: 20px;
 }
 
 .pass{
     margin: -5px 0 20px 5px;
-    color: #a6a6a6;
+    color: #ffffff;
     cursor: pointer;
+    font-family: Roboto;
+    text-decoration: underline;
+    font-size: 20px;
 }
 
-.pass{
-    text-decoration: underline;
+.pass:hover{
+    color:#bbb8b8;
+    font-size: 21px;
 }
 
 input[type="submit"]{
     width: 100%;
     height: 50px;
-    border: 1px solid;
-    background: #65098C;
+    background: green;
     border-radius: 25px;
-    font-size: 10px;
+    font-family: Roboto;
+    font-size: 20px;
     font-weight: 700;
     cursor: pointer;
-    color: #E6B8FA
+    color: white;
 }
 
 input[type="submit"]:hover{
@@ -98,15 +113,17 @@ input[type="submit"]:hover{
 .sigup{
     margin: 30px 0;
     text-align: center;
-    font-size: 16px;
-    color: #666666;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #ffffff;
 }
 .sigup a{
-    color: #2691d9;
-    text-decoration: none;
+    color: white;
+    
 }
 .sigup a:hover{
     text-decoration: underline;
+    font-size: 25px;
 }
 
 .txt_field span::before{
@@ -125,7 +142,8 @@ input[type="submit"]:hover{
 .txt_field input:focus~label,
 .txt_field input:valid~label{
     top:-20px;
-    color: #2691d9;
+    color: #ffffff;
+    font-size: 20px;
     
 }
 
