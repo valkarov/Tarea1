@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">VERDURERIA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../static/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Ventas.html">Ventas / Facturacion</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+      <h1 class="text-center">Generar factura</h1>
+        <br>
+        <form class="row g-3" novalidate>
+            <div class="col-md-3">
+              <label for="validationCustom01" class="form-label">Sucursal</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>--Seleccione una sucursal--</option>
+                <option value="1">Cartago</option>
+                <option value="2">Jaco</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Producto</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>--Seleccione un producto--</option>
+                <option value="1">Papas</option>
+                <option value="2">Pepinillos</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="validationCustom01" value="" required>
+            </div>
+            <label for="floatingPlaintextInput">Total a pagar: $500</label>
+            <div class="col-12">
+              <button class="btn btn-success" type="submit">Generar</button>
+            </div>
+          </form>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
