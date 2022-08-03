@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <script type="text/javascript" src="src/jspdf.min.js"></script>
+    <script type="text/javascript" src="src/html2canvas.js"></script>
+    <script type="text/javascript">
+        function genPDF() {
+            html2canvas(document.body, {
+                onrendered: function (canvas) {
+                    var img = canvas.toDataURL("images/png");
+                    var doc = new jsPDF();
+                    doc.addImage(img, 'JPEG', 20,20);
+                    doc.save('test.pdf');
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <a href="javascript:genPDF()">Descargar</a>
+    <div id="testDiv">
+        <h1>Prueba</h1>
+    </div>
+</body>
+
+</html>
